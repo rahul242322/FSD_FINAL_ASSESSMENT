@@ -1,0 +1,18 @@
+.header{
+    width: 100%;
+    padding: 20px 100px;
+    background-color: gray;
+    font-size: 18px;
+    color: white;
+
+}
+
+.navigation{
+
+    list-style: none;
+    display: flex;
+   width: fit-content;
+   column-gap: 20px;
+}
+
+
