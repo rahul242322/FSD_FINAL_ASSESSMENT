@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-cont
-          image: thorabh/ecommerce-backend-img:2.0
+          image: backend-img:2.0
           ports:
             - containerPort: 8080
 

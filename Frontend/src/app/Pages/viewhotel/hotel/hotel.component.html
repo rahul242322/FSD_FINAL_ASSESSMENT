@@ -1,0 +1,46 @@
+<app-header/>
+
+<div class="container">
+
+    <label>Choose a City:</label>
+
+
+    <form class="form" >
+        <select name="dropdown">
+            <option >Mumbai</option>
+            <option >Pune</option>
+            <option >Delhi</option>
+            <option >Bangloare</option>
+          </select>
+    </form>
+    
+
+<div class="div-container">
+
+     @for (hotel of hotels; track hotel.id) {
+
+        <div class="inner-div">
+
+            <p>{{hotel.id}}</p>
+            <p>{{hotel.name}}</p>
+            <p>{{hotel.roomPrice}}</p>
+            <p><img src={{hotel.imageUrl}} alt="Hotel img" width="100" height="100"></p>
+            <p>{{hotel.description}}</p>
+            <p>{{hotel.rating}}</p>
+    
+            <p>{{hotel.city}}</p>
+        
+            <p>{{hotel.email}}</p>
+        
+            <p>{{hotel.gym}}</p>
+    
+            <p>{{hotel.pool}}</p>
+
+        </div>
+     }
+  
+
+</div>
+
+
+

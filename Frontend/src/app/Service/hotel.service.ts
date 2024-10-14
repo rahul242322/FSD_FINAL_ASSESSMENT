@@ -5,28 +5,28 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class BookService {
+export class HotelService {
 
 
-  url="/api/v1/book"
+  url="http://localhost:8080/api/v1/hotel"
 
   constructor(private httpClient:HttpClient) { }
 
 
 
-  fetchAllBook():Observable<any>{
+  fetchAllHotel():Observable<any>{
 
     return this.httpClient.get<any>(this.url);
   }
 
 
-  createBook(book:any):Observable<any>{
+  createHotel(hotel:any):Observable<any>{
 
    let headers=new HttpHeaders({
     "Content-Type":"application/json"
    });
 
-    return this.httpClient.post<any>(this.url,book,{headers:headers});
+    return this.httpClient.post<any>(this.url,hotel,{headers:headers});
   }
 
 

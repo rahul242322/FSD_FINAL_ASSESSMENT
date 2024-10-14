@@ -1,12 +1,13 @@
 .header{
-    width: 100%;
+    width: 2100px;
     padding: 20px 100px;
     background-color: gray;
     font-size: 18px;
     color: white;
+    display: flex;
+    justify-content: center;
 
 }
-
 .navigation{
 
     list-style: none;
